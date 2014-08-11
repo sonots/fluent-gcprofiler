@@ -54,6 +54,8 @@ Index    Invoke Time(sec)       Use Size(byte)     Total Size(byte)         Tota
     2               0.458               722600              1668720                83436         3.76476800000001832203
 ```
 
+MEMO: `Invoke Time` is the elapsed *CPU* time from ruby starts.
+
 ## ChangeLog
 
 See [CHANGELOG.md](./CHANGELOG.md)
