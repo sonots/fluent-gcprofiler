@@ -43,6 +43,17 @@ $ fluent-gcprofiler stop -o /tmp/fluent-gcprofiler.txt
 |-u, --unix PATH|use unix socket instead of tcp||
 |-o, --output PATH|output file|/tmp/fluent-gcprofiler.txt|
 
+## Sample Output
+
+`/tmp/fluent-gcprofiler.txt` as default:
+
+```
+GC 21 invokes.
+Index    Invoke Time(sec)       Use Size(byte)     Total Size(byte)         Total Object                    GC Time(ms)
+    1               0.452               722640              1668720                83436         5.05216200000002046977
+    2               0.458               722600              1668720                83436         3.76476800000001832203
+```
+
 ## ChangeLog
 
 See [CHANGELOG.md](./CHANGELOG.md)
