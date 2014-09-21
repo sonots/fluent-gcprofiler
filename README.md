@@ -15,6 +15,7 @@ $ fluent-gem install fluent-gcprofiler
 ```
 <source>
   type debug_agent
+  port 24230
 </source>
 ```
 
@@ -25,13 +26,13 @@ GC::Profiler is a ruby built-in profiler, you do not need to install another gem
 Start
 
 ```
-$ fluent-gcprofiler start
+$ fluent-gcprofiler start -h localhost -p 24230
 ```
 
 Stop and write a profiling result.
 
 ```
-$ fluent-gcprofiler stop -o /tmp/fluent-gcprofiler.txt
+$ fluent-gcprofiler stop -h localhost -p 24230 -o /tmp/fluent-gcprofiler.txt
 ```
 
 ## Options
@@ -39,7 +40,7 @@ $ fluent-gcprofiler stop -o /tmp/fluent-gcprofiler.txt
 |parameter|description|default|
 |---|---|---|
 |-h, --host HOST|fluent host|127.0.0.1|
-|-p, --port PORT|debug_agent|24230|
+|-p, --port PORT|debug_agent port|24230|
 |-u, --unix PATH|use unix socket instead of tcp||
 |-o, --output PATH|output file|/tmp/fluent-gcprofiler.txt|
 
